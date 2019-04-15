@@ -4,20 +4,45 @@
 		<meta charset="UTF-8">
 		<title>EANT -Fullstack Essentials</title>
 		<style>
-			#encabezado-1 {
+		    /* Comentario : Anatomia de una Regla CSS; 
+			selector {
+	            propiedad : valor; 
+	            propiedad : valor;
+	            propiedad : valor;
+			}
+		    */
+			h1 {
 				color: brown;
     			font-family:fantasy;
     			font-size: 26px;
     			text-decoration: underline;
 			}
+			a {
+				color:white; 
+				text-decoration: none;
+				background-color: gray;
+			}
+			a:hover{
+				background-color: red;
+			}
 		</style>
 	</head>
 
 	<body>
-		   <h1 id="encabezado-1">Aprendiendo Git.</h1>
+		   <h1 style="font-size:33px">Aprendiendo Git.</h1>
 	            
-	       <p>Git es un <strong>software</strong> de control de versiones dise&ntilde;ado por <em>Linux Torvalds.&nbsp;</em></p3>
-		<!-- Contenido entre etquiteas de html lo llamamos nodo.
+	       <p >Git es un <strong onclick="saludar()">software</strong> de control de versiones dise&ntilde;ado por <a href="https://es.wikipedia.org/wiki/Linus_Torvalds" title="Ver más en la Wikipedia" target="_blank">Linux Torvalds.</a></p3>
+
+
+	    <!-- AREA DE SCRIPT  , between body and after the last element  --> 
+	    <script> 
+	    function saludar() {
+	    	alert("Hola");
+	    }
+
+
+	    </script>
+		<!-- Contenido entre etiquetas de html lo llamamos nodo.
 
 		 Nodos dentro de otro son sus 'Hijos' en contraposición nodos que engloban a un elemento son 'Padres'. Nodos relacionados por sus padres son 'Hermanos'		
          
@@ -25,6 +50,8 @@
 
 		 Entidades 
 		 codigo comenzado por ampersand(&) y finalidado por punto, coma(;).
+
+		 Las etiquetas que estan más cerca del contenido tienen más prioridad (Jerarquia)
 	     -->
 	</body>
 </html>
